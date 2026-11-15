@@ -10,6 +10,7 @@ int main()
         cout << "Vui long nhap yeu cau: ";
         int type;
         cin >> type;
+        cin.ignore();
         if(type == 1)
         {
             string maNhanVien , hoTen;
@@ -17,10 +18,10 @@ int main()
             int soGioOT;
             
             cout << "Hay nhap ma nhan vien: ";
-            cin >> maNhanVien;
+            getline(cin , maNhanVien);
 
             cout << "Hay nhap ho ten: ";
-            cin >> hoTen;
+            getline(cin , hoTen);
 
             cout << "Hay nhap luong co ban: ";
             cin >> luongCoBan;
@@ -37,10 +38,10 @@ int main()
             double luongCoBan , phuCapChucVu;
             
             cout << "Hay nhap ma nhan vien: ";
-            cin >> maNhanVien;
+            getline(cin , maNhanVien);
 
             cout << "Hay nhap ho ten: ";
-            cin >> hoTen;
+            getline(cin , hoTen);
 
             cout << "Hay nhap luong co ban: ";
             cin >> luongCoBan;
