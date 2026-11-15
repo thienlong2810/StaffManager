@@ -34,7 +34,7 @@ public:
     }
     double tinhLuong() override
     {
-        return luongCoBan + soGioOT * 200000;
+        return luongCoBan + soGioOT * 250000;
     }
     void hienThi() override
     {
